@@ -24,16 +24,6 @@ let baseMaps = {
   "Satellite Streets": satelliteStreets
 };
 
-
-// Create the map object with center, zoom level and default layer.
-let map = L.map('mapid', {
-	center: [40.7, -94.5],
-	zoom: 3,
-	layers: [streets]
-});
-
-
-
 // Create a legend control object.
 let legend = L.control({
     position: "bottomright"
@@ -41,9 +31,6 @@ let legend = L.control({
 
   // Then add all the details for the legend.
 legend.onAdd = function() {
-
-    let div = L.DomUtil.create("div", "info legend");
-
     const magnitudes = [0, 1, 2, 3, 4, 5];
     const colors = [
         "#98ee00",
@@ -54,7 +41,6 @@ legend.onAdd = function() {
         "#ea2c2c"
     ];
 
-
     // Looping through our intervals to generate a label with a colored square for each interval.
    for (var i = 0; i < magnitudes.length; i++) {
     console.log(colors[i]);
@@ -63,12 +49,10 @@ legend.onAdd = function() {
       magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
  }
   return div;
-
-
+};
 
 legend.addTo(map);
 });
-
 
 // Create the earthquake layer for our map.
 let earthquakes = new L.layerGroup();
