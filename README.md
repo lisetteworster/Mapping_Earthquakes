@@ -10,8 +10,8 @@ finally we add major earthquake data to the map using d3.json(), and a color and
     map 1 earthquakes, map 2 tectonics, map 3 major earthquakes
     3 overlays 1 extra for fun (street, satellite, dark, light)
 
-![](Earthquake_Challenge/static/images/mappingsat.png)
+![](Earthquake_Challenge/static/images/mapping_sat.png)
 
-![](static/images/mapping1.png)
+![](Earthquake_Challenge/static/images/mapping1.png)
 
-![](static/images/mapping2.png)
+![](Earthquake_Challenge/static/images/mapping2.png)
