@@ -9,6 +9,9 @@ finally we add major earthquake data to the map using d3.json(), and a color and
 ## Module 13 challenge summary
     map 1 earthquakes, map 2 tectonics, map 3 major earthquakes
     3 overlays 1 extra for fun (street, satellite, dark, light)
+
 ![](static/images/mappingsat.png)
+
 ![](static/images/mapping1.png)
+
 ![](static/images/mapping2.png)
